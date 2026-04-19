@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let servicioSeleccionado = "";
 
 function selectService(servicio) {
@@ -85,3 +86,38 @@ let citasOcupadas = [
   { fecha: "2026-04-20", hora: "13:00" },
   { fecha: "2026-04-20", hora: "15:00" }
 ];
+=======
+let servicioSeleccionado = "";
+
+function selectService(servicio) {
+  servicioSeleccionado = servicio;
+
+  document.querySelectorAll('.service-card').forEach(card => {
+    card.classList.remove('active');
+  });
+
+  event.currentTarget.classList.add('active');
+}
+
+function confirmarCita() {
+  const nombre = document.getElementById("nombre").value;
+  const telefono = document.getElementById("telefono").value;
+  const fecha = document.getElementById("fecha").value;
+  const hora = document.getElementById("hora").value;
+
+  if (!nombre || !telefono || !fecha || !hora || !servicioSeleccionado) {
+    alert("Completa todos los campos");
+    return;
+  }
+
+  const mensaje = `Hola, quiero agendar una cita:
+Nombre: ${nombre}
+Servicio: ${servicioSeleccionado}
+Fecha: ${fecha}
+Hora: ${hora}`;
+
+  const url = `https://wa.me/5216560000000?text=${encodeURIComponent(mensaje)}`;
+
+  window.open(url, "_blank");
+}
+>>>>>>> f9b6d6f00d985b93e023b173242980ade75a5a13
