@@ -79,7 +79,7 @@ Hora: ${hora}`;
   const url = `https://wa.me/5216561375652?text=${encodeURIComponent(mensaje)}`;
 
   window.open(url, "_blank");
-}
+
 
 let citasOcupadas = [
   { fecha: "2026-04-20", hora: "13:00" },
