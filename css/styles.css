@@ -3,6 +3,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background: hsl(220, 82%, 2%);
   color: white;
+  overflow-x: hidden;
 }
 
 /* HERO CON IMAGEN */
@@ -14,6 +15,12 @@ body {
   background-position: top center; /* 🔥 CLAVE */
   position: relative;
   
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* CAPA OSCURA PARA QUE SE LEA EL TEXTO */
@@ -42,7 +49,9 @@ body {
 /* CONTENEDOR */
 .container {
   margin-top: -40px;
-
+  max-width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 /* HEADER */
@@ -137,7 +146,7 @@ input {
 /* GRID */
 .services-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 
@@ -178,6 +187,9 @@ input {
   border: 2px solid white;
 }
 
+/* 📱 CELULAR (default ya lo tienes) */
+
+/* 📲 TABLET */
 @media (min-width: 768px) {
   .container {
     max-width: 600px;
@@ -192,6 +204,7 @@ input {
   }
 }
 
+/* 💻 DESKTOP */
 @media (min-width: 1024px) {
   .container {
     max-width: 900px;
