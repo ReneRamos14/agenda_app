@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let servicioSeleccionado = "";
 
 function selectService(servicio) {
@@ -86,7 +85,6 @@ let citasOcupadas = [
   { fecha: "2026-04-20", hora: "13:00" },
   { fecha: "2026-04-20", hora: "15:00" }
 ];
-=======
 let servicioSeleccionado = "";
 
 function selectService(servicio) {
@@ -120,4 +118,4 @@ Hora: ${hora}`;
 
   window.open(url, "_blank");
 }
->>>>>>> f9b6d6f00d985b93e023b173242980ade75a5a13
+
