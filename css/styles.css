@@ -4,8 +4,6 @@
 
 body {
    margin: 0;
-  display: flex;
-  justify-content: center;
   background: hsl(220, 82%, 2%);
   color: white;
   overflow-x: hidden;
@@ -19,13 +17,10 @@ html, body {
 /* HERO CON IMAGEN */
 .hero {
   width: 100%;
-  max-width: 420px;
   height: 220px;
-  background: url('../images/portada.jpg') center/cover no-repeat;
+  background: url('../images/portada.jpg') no-repeat;
   background-size: cover;
-  background-position: top center; /* 🔥 CLAVE */
-  position: relative;
-  
+  background-position: top center;
 }
 
 img {
@@ -61,6 +56,7 @@ img {
 .container {
   width: 100%;
   max-width: 420px;
+  margin: 0 auto; /* 🔥 ESTO CENTRA BIEN */
   padding: 15px;
 }
 
