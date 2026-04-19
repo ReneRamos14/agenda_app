@@ -59,7 +59,7 @@ Servicio: ${servicioSeleccionado}
 Fecha: ${fecha}
 Hora: ${hora}`;
 
-  const url = `https://wa.me/5216560000000?text=${encodeURIComponent(mensaje)}`;
+  const url = `https://wa.me/5216561491339?text=${encodeURIComponent(mensaje)}`;
 
   window.open(url, "_blank");
 
@@ -69,17 +69,6 @@ if (errorHorario) {
   return;
 }
 }
-
-  const mensaje = `Hola, quiero agendar una cita:
-Nombre: ${nombre}
-Servicio: ${servicioSeleccionado}
-Fecha: ${fecha}
-Hora: ${hora}`;
-
-  const url = `https://wa.me/5216561375652?text=${encodeURIComponent(mensaje)}`;
-
-  window.open(url, "_blank");
-
 
 let citasOcupadas = [
   { fecha: "2026-04-20", hora: "13:00" },
