@@ -76,7 +76,7 @@ Servicio: ${servicioSeleccionado}
 Fecha: ${fecha}
 Hora: ${hora}`;
 
-  const url = `https://wa.me/5216560000000?text=${encodeURIComponent(mensaje)}`;
+  const url = `https://wa.me/5216561375652?text=${encodeURIComponent(mensaje)}`;
 
   window.open(url, "_blank");
 }
